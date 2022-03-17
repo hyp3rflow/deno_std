@@ -25,6 +25,10 @@ import {
 } from "./asserts.ts";
 import { bold, gray, green, red, stripColor, yellow } from "../fmt/colors.ts";
 
+Deno.test("asdf", (t) => {
+  console.log(t);
+})
+
 Deno.test("testingEqualDifferentZero", () => {
   assert(equal(0, -0));
   assert(equal(0, +0));

@@ -1,0 +1,24 @@
+function createAssertSnapshot() {
+  const snapshotMap = {
+    "babo": 0++
+  }
+
+  
+}
+
+export const assertSnapshot = createAssertSnapshot();
+
+Deno.test("babo", () => {
+  assertSnapshot(); -> 0
+  assertSnapshot();
+  assertSnapshot();
+  assertSnapshot();
+  assertSnapshot();
+  assertSnapshot();
+})
+
+__snapshot__
+{
+  "babo": { data },
+  "babo #1": { data1 },
+}

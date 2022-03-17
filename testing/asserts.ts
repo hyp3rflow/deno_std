@@ -864,3 +864,10 @@ export function unimplemented(msg?: string): never {
 export function unreachable(): never {
   throw new AssertionError("unreachable");
 }
+
+// interface AssertSnapshotFn {
+//   (name: string, obj: unknown): void;
+// }
+// function createAssertSnapshot(): AssertSnapshotFn {
+
+// }
